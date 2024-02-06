@@ -1,9 +1,54 @@
-.navbar{
-    display: inline-flex;
+*{
+    background-color: white;
+    color: goldenrod;
+    margin: 0;
 }
-
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    
+}
 .links{
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
+.home,.sponsor,.events,.contact-us{
+    margin-right: 50px;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
+
+.logo-name span{
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.logo-name p{
+    color: azure;
+    font-size: 1.15rem;
+}
+
+.logo-name img{
+    height: 400px;
+    width: 480px;
+    position: absolute;
+    top: 150px;
+    left: 62%
+}
+
+#cursor{
+    font-weight: 100;
+}
+
