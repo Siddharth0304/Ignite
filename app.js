@@ -19,7 +19,7 @@ function type() {
             // Optionally, you can add a delay before starting to type the next string
             setTimeout(() => {
                 isDeleting = false;
-            }, 1000); // Adjust the delay if needed
+            }, 100); // Adjust the delay if needed
         }
     } else {
         textElement.textContent = currentString.substring(0, charIndex + 1);
@@ -30,7 +30,7 @@ function type() {
             // Optionally, you can add a delay before starting to delete the text
             setTimeout(() => {
                 isDeleting = true;
-            }, 1000); // Adjust the delay if needed
+            }, 100); // Adjust the delay if needed
         }
     }
 }
