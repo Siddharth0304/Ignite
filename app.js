@@ -38,8 +38,8 @@ function type() {
 setInterval(type, 150); // Adjust the typing speed if needed
 
 
-// let logo=document.querySelector('.logo');
-// logo.addEventListener('click',()=>{
+let logo=document.querySelector('.logo');
+logo.addEventListener('click',()=>{demo()})
 
 // });  FOR LOGO ON CLICK
 
@@ -54,3 +54,14 @@ window.addEventListener("load",()=>{
     pic3.classList.remove("hidden");
     pic3.classList.add("pics3")
 })
+
+let url='https://api.quotable.io/random';
+async function demo(){
+    try{
+        let res=await axios.get(url);
+        document.querySelector("h4").innerText=res.data.content;
+    }
+    catch(e){
+        console.log("hello");
+    }
+}
