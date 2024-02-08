@@ -36,3 +36,21 @@ function type() {
 }
 
 setInterval(type, 150); // Adjust the typing speed if needed
+
+
+// let logo=document.querySelector('.logo');
+// logo.addEventListener('click',()=>{
+
+// });  FOR LOGO ON CLICK
+
+window.addEventListener("load",()=>{
+    let infodiv=document.querySelector(".info");
+    infodiv.classList.remove("hidden");
+    infodiv.classList.add("trans");
+    let pic2=document.querySelector(".pic2");
+    pic2.classList.remove("hidden");
+    pic2.classList.add("pics2");
+    let pic3=document.querySelector(".pic3");
+    pic3.classList.remove("hidden");
+    pic3.classList.add("pics3")
+})
