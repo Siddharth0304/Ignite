@@ -44,9 +44,25 @@ logo.addEventListener('click',()=>{demo()})
 // });  FOR LOGO ON CLICK
 
 window.addEventListener("load",()=>{
-    let infodiv=document.querySelector(".info");
-    infodiv.classList.remove("hidden");
-    infodiv.classList.add("trans");
+    let p1=document.querySelector(".para1");
+    let p2=document.querySelector(".para2");
+    let p3=document.querySelector(".para3");
+    let p4=document.querySelector(".para4");
+    p1.classList.add("trans");
+    p1.classList.remove("hidden");
+    p1.classList.add("show");
+    setTimeout(()=>{p2.classList.add("trans");
+                    p2.classList.remove("hidden");
+                    p2.classList.add("show");
+    },1000);
+    setTimeout(()=>{p3.classList.add("trans");
+                    p3.classList.remove("hidden");
+                    p3.classList.add("show");
+    },2000);
+    setTimeout(()=>{p4.classList.add("trans");
+                    p4.classList.remove("hidden");
+                    p4.classList.add("show");
+    },3000);
     let pic2=document.querySelector(".pic2");
     pic2.classList.remove("hidden");
     pic2.classList.add("pics2");
