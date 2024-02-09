@@ -39,9 +39,10 @@ setInterval(type, 150); // Adjust the typing speed if needed
 
 
 let logo=document.querySelector('.logo');
-logo.addEventListener('click',()=>{demo()})
+logo.addEventListener('click',()=>{
+    window.scrollTo(0,0);
+})
 
-// });  FOR LOGO ON CLICK
 
 window.addEventListener("load",()=>{
     let p1=document.querySelector(".para1");
@@ -71,13 +72,3 @@ window.addEventListener("load",()=>{
     pic3.classList.add("pics3")
 })
 
-let url='https://api.quotable.io/random';
-async function demo(){
-    try{
-        let res=await axios.get(url);
-        document.querySelector("h4").innerText=res.data.content;
-    }
-    catch(e){
-        console.log("hello");
-    }
-}

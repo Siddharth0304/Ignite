@@ -5,20 +5,17 @@
 }
 
 .navbar{
-    position: fixed;
-    height: 120px;
-    z-index: 8;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
     display: flex;
-    justify-content: space-between;
-      
-}
-.links{
-    
-    margin-left: 700px;
-    display: inline-flex;
-    justify-content: space-evenly;
+    justify-content:space-between;
     align-items: center;
+    flex-wrap: wrap;
+    margin-left: 2px;
+    z-index: 8;
+    height: 100px;
+
 }
 
 .home,.sponsor,.events,.contact-us{
@@ -45,19 +42,6 @@ a{
     font-weight: bold;
 }
 
-.logo-name p{
-    color: azure;
-    font-size: 1.15rem;
-}
-
-.logo-name img{
-    height: 400px;
-    width: 480px;
-    position: absolute;
-    top: 150px;
-    left: 62%
-}
-
 #cursor{
     font-weight: 100;
 }
@@ -68,12 +52,17 @@ a{
     font-weight: 900;
 }
 
+.logo-name{
+    margin-top: 20px;
+}
 
 .info{
-    height: 100px;
+    display: flexbox;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     width: 70%;
     font-family: 'Anek Devanagari', sans-serif;;
-    /* background-color: #baafa3; */
     color: #21252c;
     font-size: 1.20rem;
     font-weight: 600;
@@ -99,7 +88,7 @@ a{
     width: 400px;
     position: absolute;
     top: 100px;
-    left: 730px;
+    left: 57%;
     box-shadow: 10px 10px 10px 10px gray;
     
 }
@@ -109,7 +98,7 @@ a{
     width: 400px;
     position: absolute;
     top: 360px;
-    left: 820px;
+    left: 63%;
     box-shadow: 10px 10px 10px 10px gray;
 }
 
@@ -146,7 +135,7 @@ a{
 
 @keyframes slide2 {
     0% {left : -200px}
-    100% {left : 820px}
+    100% {left : 63%}
 }
 
 .pics3{
@@ -157,7 +146,7 @@ a{
 .ign{
     /* background-color: #0d8543; */
     color: black;
-    font-size: 1.35rem;
+    font-size: 1.6rem;
     font-weight: 900;
 }
 
@@ -169,13 +158,4 @@ a{
     scale: 1.15;
     z-index: 5;
 }
-
-
-
-  
-
-
-
-
-
 
