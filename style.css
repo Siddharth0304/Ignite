@@ -1,6 +1,6 @@
 *{
-    background-color: #F8F8FF;
-    color: goldenrod;
+    background-color: #fefefa;
+    color: #212530;
     margin: 0;
 }
 
@@ -47,7 +47,7 @@ a{
 }
 
 #typing-title{
-    
+    color: #212530;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
 }
@@ -56,17 +56,49 @@ a{
     margin-top: 20px;
 }
 
+#page1pic1{
+    height: 400px;
+    width: 30%;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+}
+#page1pic2{
+    height: 250px;
+    width: 20%;
+    position: absolute;
+    top: 15%;
+    left: 74%;
+}
+
+.venue{
+    margin-top: 7%;
+    margin-left: 3%;
+    font-family: 'Anek Devanagari', sans-serif;;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.disk{
+    display: none;
+}
+.passage{
+    margin-top: 20%;
+}
+
 .info{
+    border-radius: 2%;
+    background-color: goldenrod;
     display: flexbox;
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
-    width: 70%;
+    width: 60%;
     font-family: 'Anek Devanagari', sans-serif;;
     color: #21252c;
     font-size: 1.20rem;
     font-weight: 600;
-    margin-left: 4%;
+    margin-left: 12%;
     z-index: 8;
     
 }
@@ -84,21 +116,21 @@ a{
 }
 
 .pic2{
-    height: 300px;
-    width: 400px;
+    height: 280px;
+    width: 300px;
     position: absolute;
-    top: 100px;
-    left: 57%;
+    top: 720px;
+    left: 58%;
     box-shadow: 10px 10px 10px 10px gray;
     
 }
 
 .pic3{
-    height: 300px;
-    width: 400px;
+    height: 250px;
+    width: 300px;
     position: absolute;
-    top: 360px;
-    left: 63%;
+    top: 900px;
+    right: 12%;
     box-shadow: 10px 10px 10px 10px gray;
 }
 
@@ -107,25 +139,32 @@ a{
 }
 
 .hidden{
-    opacity: 0;
+    display: none;
 }
 
 .show{
     opacity: 1;
 }
 
+
 @keyframes fadeIn {
     0% { opacity: 0; }
-    100% { opacity: 1; }
+    50%{
+        opacity: 0.8;
+        scale: 1.2;
+    }
+    100% { opacity: 1;
+            scale: 1;
+    }
 }
 
 .trans{
-    animation: fadeIn 2s;
+    animation: fadeIn 1.4s;
 }
 
 @keyframes slide1 {
-    0% {top : -200px}
-    100% {top : 100px}
+    0% {left : 48%}
+    100% {left : 58%}
 }
 
 .pics2{
@@ -134,8 +173,8 @@ a{
 }
 
 @keyframes slide2 {
-    0% {left : -200px}
-    100% {left : 63%}
+    0% {right : 0%}
+    100% {right : 12%}
 }
 
 .pics3{
@@ -157,5 +196,32 @@ a{
 .pic2:hover{
     scale: 1.15;
     z-index: 5;
+}
+
+@keyframes fadez{
+    0% {opacity: 0;}
+    100% {opacity:1}
+}
+
+.fade{
+    animation: fadez 1s;
+}
+
+.letsgo{
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+.letsgo a{
+    padding: 1%;
+    border: 2px solid #808080;
+    color: #808080;
+    border-radius: 4.5%;
+    transition: ease-in-out 0.25s;
+}
+
+.letsgo a:hover{
+    background-color: #808080;
+    color: white;
 }
 

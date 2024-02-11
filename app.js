@@ -45,25 +45,41 @@ logo.addEventListener('click',()=>{
 
 
 window.addEventListener("load",()=>{
+    let pic1=document.querySelector("#page1pic1");
+    pic1.classList.add("trans");
+    pic1.classList.remove("hidden");
+    pic1.classList.add("show");
+    setTimeout(()=>{
+        let pic2=document.querySelector("#page1pic2");
+        pic2.classList.add("trans");
+        pic2.classList.remove("hidden");
+        pic2.classList.add("show");
+    },300)
+    
+})
+
+document.querySelector(".kno").addEventListener('click',()=>{
+    document.querySelector(".info").classList.remove("disk");
     let p1=document.querySelector(".para1");
     let p2=document.querySelector(".para2");
     let p3=document.querySelector(".para3");
     let p4=document.querySelector(".para4");
-    p1.classList.add("trans");
+    p1.classList.add("fade");
     p1.classList.remove("hidden");
     p1.classList.add("show");
-    setTimeout(()=>{p2.classList.add("trans");
-                    p2.classList.remove("hidden");
-                    p2.classList.add("show");
-    },1000);
-    setTimeout(()=>{p3.classList.add("trans");
+    setTimeout(()=>{
+        p2.classList.add("fade");
+        p2.classList.remove("hidden");
+        p2.classList.add("show");
+    },750);
+    setTimeout(()=>{p3.classList.add("fade");
                     p3.classList.remove("hidden");
                     p3.classList.add("show");
-    },2000);
-    setTimeout(()=>{p4.classList.add("trans");
+    },1500);
+    setTimeout(()=>{p4.classList.add("fade");
                     p4.classList.remove("hidden");
                     p4.classList.add("show");
-    },3000);
+    },2250);
     let pic2=document.querySelector(".pic2");
     pic2.classList.remove("hidden");
     pic2.classList.add("pics2");
@@ -71,4 +87,3 @@ window.addEventListener("load",()=>{
     pic3.classList.remove("hidden");
     pic3.classList.add("pics3")
 })
-
