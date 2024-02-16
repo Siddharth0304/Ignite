@@ -1,6 +1,51 @@
 body{
     background-color: #212530;
 }
+
+.navbar{
+    background-color: #212530;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 2px;
+    z-index: 8;
+    height: 100px;
+
+}
+
+.home,.sponsor,.events,.contact-us{
+    margin-right: 50px;
+}
+
+#ac{
+    color: #fefafa;
+    text-decoration: none;
+    text-decoration-color: goldenrod;
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
+.mew{
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+
+}
+
+.mew:hover{
+    text-decoration: underline;
+    text-decoration-color: #fefafa;
+    text-decoration-thickness: 3px;
+}
+
+.logo img{
+    height: 100px;
+    width: 100px;
+}
+
 h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
@@ -62,7 +107,7 @@ img{
 .card-body h2{
     color: goldenrod;
 }
-a{
+.card-body a{
     text-decoration: none;
     padding: 2% 6% 1% 6%;
     border-radius: 30px;
@@ -72,12 +117,11 @@ a{
     color: goldenrod;
 }
 
-a:hover{
+#zx:hover{
     border: 2px solid goldenrod;
     background-color: goldenrod;
     color: white;
 }
 
-.hidden{
-    display:none;
-}
+
+
