@@ -210,18 +210,32 @@ a{
 .letsgo{
     margin-top: 5%;
     margin-left: 20%;
+    font-family: 'Anek Devanagari', sans-serif;;
+    font-weight: 600;
 }
 
 .letsgo a{
+    
     padding: 1%;
-    border: 1px solid #808080;
-    color: #808080;
-    border-radius: 4.5%;
+    /* border: 1px solid goldenrod; */
+    color: goldenrod;
+    border-radius: 40px;
     transition: ease-in-out 0.25s;
+    font-size: 1.3rem;
+    
 }
 
 .letsgo a:hover{
-    background-color: #808080;
-    color: white;
+    background-color: #21252c;
+    color: goldenrod;
+}
+
+@keyframes fish {
+    0%{
+        font-size: 0px;
+    }
+    100%{
+        font-size: 2rem;
+    }
 }
 

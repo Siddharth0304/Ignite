@@ -85,5 +85,11 @@ document.querySelector(".kno").addEventListener('click',()=>{
     pic2.classList.add("pics2");
     let pic3=document.querySelector(".pic3");
     pic3.classList.remove("hidden");
-    pic3.classList.add("pics3")
+    pic3.classList.add("pics3");
+    // setTimeout(()=>{
+    //     let butx=document.querySelector(".kurchi");
+    // butx.classList.remove("hidden");
+    // butx.classList.add("madata");
+    // },3000)
+    
 })
