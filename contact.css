@@ -1,5 +1,6 @@
 body{
     background-color: #212530;
+    color: white
 }
 
 .navbar{
@@ -44,4 +45,72 @@ body{
 .logo img{
     height: 100px;
     width: 100px;
+}
+
+h1{
+    text-align: center;
+    color: goldenrod;
+    font-family: 'Poppins';
+    font-size: 2.4rem;;
+}
+
+table{
+    margin-left: 25px;
+}
+
+th{
+    margin-left: 100px;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-right: 100px;
+    font-weight: 600;
+    font-family: 'Anek Devanagari', sans-serif;;;
+    color: #fefefa;
+}
+
+td{
+    margin-right: 100px;
+    font-size: 1.25rem;
+    text-align: center;
+    padding-right: 100px;
+    font-weight: 600;
+    font-family: 'Anek Devanagari', sans-serif;;;
+}
+.SK{
+    background: rgba(255, 255, 255, 0.03);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+}
+
+iframe{
+    position: absolute;
+    top: 40%;
+    left: 63%;
+    border-radius: 2%;
+}
+
+.fol{
+    position: absolute;
+    height: 20px;
+    width: 20%;
+    left: 68%;
+    top: 98%;
+    
+}
+
+.k3g{
+    margin-left: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.k3g img{
+    height: 35px;
+    width: 35px;
+}
+
+.fol h3{
+    text-align: center;
 }
