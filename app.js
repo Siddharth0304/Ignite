@@ -57,7 +57,7 @@ window.addEventListener("load",()=>{
         pic2.classList.add("show");
     },300)
     
-    },700);
+    },400);
     
 })
 
