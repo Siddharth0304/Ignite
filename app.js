@@ -45,6 +45,7 @@ logo.addEventListener('click',()=>{
 
 
 window.addEventListener("load",()=>{
+    setTimeout(()=>{
     let pic1=document.querySelector("#page1pic1");
     pic1.classList.add("trans");
     pic1.classList.remove("hidden");
@@ -55,6 +56,8 @@ window.addEventListener("load",()=>{
         pic2.classList.remove("hidden");
         pic2.classList.add("show");
     },300)
+    
+    },700);
     
 })
 
@@ -86,10 +89,13 @@ document.querySelector(".kno").addEventListener('click',()=>{
     let pic3=document.querySelector(".pic3");
     pic3.classList.remove("hidden");
     pic3.classList.add("pics3");
-    // setTimeout(()=>{
-    //     let butx=document.querySelector(".kurchi");
-    // butx.classList.remove("hidden");
-    // butx.classList.add("madata");
-    // },3000)
+    setTimeout(()=>{
+        let butx=document.querySelector(".svsc");
+        butx.classList.remove("hidden");
+        butx.classList.add("fade");
+        let but=document.querySelector("#spyder");
+        but.classList.remove("hidden");
+        but.classList.add("fade");
+    },3000)
     
 })

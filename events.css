@@ -1,7 +1,11 @@
 body{
     background-color: #212530;
+    animation: fadez 1s;
 }
-
+@keyframes fadez{
+    0% {opacity: 0;}
+    100% {opacity:1}
+}
 .navbar{
     background-color: #212530;
     position: -webkit-sticky;

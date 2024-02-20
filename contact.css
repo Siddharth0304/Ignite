@@ -1,6 +1,10 @@
 body{
     background-color: #212530;
-    color: white
+    animation: fadez 1s;
+}
+@keyframes fadez{
+    0% {opacity: 0;}
+    100% {opacity:1}
 }
 
 .navbar{
@@ -54,63 +58,143 @@ h1{
     font-size: 2.4rem;;
 }
 
-table{
-    margin-left: 25px;
-}
+
 
 th{
-    margin-left: 100px;
+    
     font-size: 1.6rem;
     text-align: center;
     padding-right: 100px;
-    font-weight: 600;
+    font-weight: 400;
     font-family: 'Anek Devanagari', sans-serif;;;
     color: #fefefa;
 }
 
 td{
-    margin-right: 100px;
+    
     font-size: 1.25rem;
     text-align: center;
     padding-right: 100px;
-    font-weight: 600;
     font-family: 'Anek Devanagari', sans-serif;;;
+    color: #fefafacc;
 }
 .SK{
-    background: rgba(255, 255, 255, 0.03);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(20px);
--webkit-backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.001);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+
+.gmb{
+    display: flex;
+    justify-content: space-evenly;
+    height: 280px;
+    flex-wrap: wrap;
 }
 
 iframe{
-    position: absolute;
-    top: 40%;
-    left: 63%;
-    border-radius: 2%;
+    border-radius: 4%;
+    height: 330px;
 }
 
-.fol{
-    position: absolute;
-    height: 20px;
-    width: 20%;
-    left: 68%;
-    top: 98%;
+.nani{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.arjun{
+    background: rgba(255, 255, 255, 0.001);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    width: 30%;
+    /* margin-left: 3%; */
     
 }
 
-.k3g{
-    margin-left: 60px;
+#arj{
+    margin-left: 5%;
+    font-weight: 600;
+    font-size: 1.9rem;
+    font-family: 'Anek Devanagari', sans-serif;;;
+    display: flex;
+    align-items: center;
+    color: #fefefa;
+}
+
+
+
+#ar{
+    margin-left: 5%;
+    font-size: 1.35rem;
+    font-family: 'Anek Devanagari', sans-serif;;;
+    font-weight: 400;
+    color: #fefafacc;
+}
+
+.murari{
+    background: rgba(255, 255, 255, 0.001);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    width: 30%;
+    
+}
+
+#takkari{
+    margin-left: 10%;
+    font-size: 1.35rem;
+    font-family: 'Anek Devanagari', sans-serif;;;
+    font-weight: 400;
+    color: #fefafa;
+    text-decoration: none;
+}
+
+#tak{
+    
+    padding:10px;
+    background-color: goldenrod;
+    border: 2px solid goldenrod;
+    border-radius: 40px;
+    margin-left: 45%;
+    font-size: 1.35rem;
+    font-family: 'Anek Devanagari', sans-serif;;;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+
+.dookudu{
+    background: rgba(255, 255, 255, 0.001);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    width: 30%;
+   
+}
+
+#businessman{
+    margin-left:18%;
+    font-size: 1.35rem;
+    font-family: 'Anek Devanagari', sans-serif;;;
+    font-weight: 400;
+    color: #fefafa;
+    text-decoration: none;
+}
+
+img{
+    height: 30px;
+    width: 30px;
+}
+
+#svp{
+    margin-left: 8%;
+    width: 25%;
     display: flex;
     justify-content: space-between;
-}
-
-.k3g img{
-    height: 35px;
-    width: 35px;
-}
-
-.fol h3{
-    text-align: center;
 }

@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+body{
+    animation: fadez 1s;
+}
+
 .navbar{
     position: -webkit-sticky;
     position: sticky;
@@ -83,7 +87,7 @@ a{
     display: none;
 }
 .passage{
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 .info{
@@ -119,7 +123,7 @@ a{
     height: 280px;
     width: 300px;
     position: absolute;
-    top: 720px;
+    top: 700px;
     left: 58%;
     box-shadow: 10px 10px 10px 10px gray;
     
@@ -212,6 +216,7 @@ a{
     margin-left: 20%;
     font-family: 'Anek Devanagari', sans-serif;;
     font-weight: 600;
+    
 }
 
 .letsgo a{
@@ -220,14 +225,16 @@ a{
     /* border: 1px solid goldenrod; */
     color: goldenrod;
     border-radius: 40px;
+    border: 2px solid goldenrod;
     transition: ease-in-out 0.25s;
     font-size: 1.3rem;
     
 }
 
 .letsgo a:hover{
-    background-color: #21252c;
-    color: goldenrod;
+    background-color: goldenrod;;
+    color: #212530;
+    border: 2px solid #212530;
 }
 
 @keyframes fish {
@@ -239,3 +246,37 @@ a{
     }
 }
 
+.svsc{
+    
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+#spyder{
+    margin-left: -25%;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    padding: 1%;
+    border-radius: 50px;
+    border: 2px solid goldenrod;
+    color: goldenrod;
+    transition: ease 0.3s;
+    
+}
+
+#spyder:hover{
+    border-radius: 50px;
+    border: 2px solid #212530;
+    background-color: goldenrod;
+    color: #212530;
+}
+
+.gk{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: last baseline;
+    
+}
