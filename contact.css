@@ -10,7 +10,7 @@ body{
 .navbar{
     background-color: #212530;
     position: -webkit-sticky;
-    position: sticky;
+    position: static;
     top: 0;
     display: flex;
     justify-content:space-between;
@@ -71,7 +71,6 @@ th{
 }
 
 td{
-    
     font-size: 1.25rem;
     text-align: center;
     padding-right: 100px;
@@ -84,6 +83,8 @@ td{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+   padding: 17px;
+
 }
 
 
@@ -92,6 +93,7 @@ td{
     justify-content: space-evenly;
     height: 280px;
     flex-wrap: wrap;
+    margin-bottom: 25px;
 }
 
 iframe{
@@ -121,14 +123,16 @@ iframe{
     font-size: 1.9rem;
     font-family: 'Anek Devanagari', sans-serif;;;
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     color: #fefefa;
+    margin-top: 0px;
 }
 
 
 
 #ar{
-    margin-left: 5%;
+    margin-left: 7%;
     font-size: 1.35rem;
     font-family: 'Anek Devanagari', sans-serif;;;
     font-weight: 400;
@@ -175,11 +179,10 @@ iframe{
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     width: 30%;
-   
 }
 
 #businessman{
-    margin-left:18%;
+    margin-left:10%;
     font-size: 1.35rem;
     font-family: 'Anek Devanagari', sans-serif;;;
     font-weight: 400;
@@ -190,11 +193,65 @@ iframe{
 img{
     height: 30px;
     width: 30px;
+    margin-left: 13px;
 }
 
 #svp{
     margin-left: 8%;
     width: 25%;
     display: flex;
-    justify-content: space-between;
+}
+
+@media (max-width:460px){
+    .nani{
+        display: inline-block;
+    }
+
+    .gmb{
+        display: inline-block;
+    }
+
+    th{
+        font-size: 1.2rem;
+    }
+
+    td{
+        font-size: 1.1rem;
+        
+    }
+
+    
+
+    .arjun,.murari,.dookudu{
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    #ar{
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+
+    .dookudu{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .murari{
+        margin-top: 10%;
+    }
+
+    iframe{
+        margin-top: 25px;
+        padding: 3px;
+    }
+
+    #tak{
+        margin-left: 33%;
+        margin-top: 10%;
+    }
+    
+    .arjun,.murari,.dookudu{
+        margin-left: 16%;
+    }
 }
